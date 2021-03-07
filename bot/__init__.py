@@ -45,6 +45,9 @@ DOWNLOAD_DIR = None
 BOT_TOKEN = None
 TELEGRAM_API = None
 TELEGRAM_HASH = None
+MEGA_API_KEY = None
+MEGA_EMAIL_ID = None
+MEGA_PASSWORD = None
 
 download_dict_lock = threading.Lock()
 status_reply_dict_lock = threading.Lock()
