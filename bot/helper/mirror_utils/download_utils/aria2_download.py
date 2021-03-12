@@ -27,7 +27,7 @@ class AriaDownloadHelper(DownloadHelper):
         if STOP_DUPLICATE_MIRROR:
             if smsg:
                 dl.getListener().onDownloadError(
-                    f'😡😡File is already available in drive. You should have search before mirror any file. You might get ban if you do this again. This download has been stopped.\n\n')
+                    f'😡😡File is already available in the drive. You should search before mirroring any files. You might get ban if you do this again..\n\n')
                 print(dl.getListener())
                 sendMarkup(" Here are the search results:👇👇", dl.getListener().bot, dl.getListener().update, button)
                 aria2.remove([download])
@@ -61,7 +61,7 @@ class AriaDownloadHelper(DownloadHelper):
     def __onDownloadStopped(self, api, gid):
         LOGGER.info(f"onDownloadStop: {gid}")
         dl = getDownloadByGid(gid)
-        if dl: dl.getListener().onDownloadError('Download stopped by user!')
+        if dl: dl.getListener().onDownloadError('𝐘𝐨𝐮𝐫 𝐓𝐨𝐫𝐫𝐞𝐧𝐭 𝐇𝐚𝐬 𝐍𝐨 𝐒𝐞𝐞𝐝𝐬, ⚠️ 𝐃𝐞𝐚𝐝 𝐓𝐨𝐫𝐫𝐞𝐧𝐭 !!')
 
     @new_thread
     def __onDownloadError(self, api, gid):
