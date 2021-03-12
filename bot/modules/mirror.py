@@ -158,7 +158,7 @@ class MirrorListener(listeners.MirrorListeners):
                 else:
                     buttons.buildbutton("🔗Index Link🔗", share_url)
             if BUTTON_THREE_NAME is not None and BUTTON_THREE_URL is not None:
-                buttons.buildbutton(f"{🏠Join Google Group🏠}", f"{https://groups.google.com/g/bunchoffreeloaders}")
+                buttons.buildbutton(f"{BUTTON_THREE_NAME}", f"{BUTTON_THREE_URL}")
             if BUTTON_FOUR_NAME is not None and BUTTON_FOUR_URL is not None:
                 buttons.buildbutton(f"{BUTTON_FOUR_NAME}", f"{BUTTON_FOUR_URL}")
             if BUTTON_FIVE_NAME is not None and BUTTON_FIVE_URL is not None:
